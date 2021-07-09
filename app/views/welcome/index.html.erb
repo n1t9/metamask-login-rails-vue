@@ -1,0 +1,13 @@
+<h1>MetaMask Login</h1>
+
+<div id='metamask-app'>
+  <% if @current_user %>
+    <button type="button" name="button" v-on:click="signout">Logout</button>
+    <ul>
+      <li>Public Address: <%= @current_user.public_address %></li>
+      <li>Nonce: <%= @current_user.nonce %></li>
+    </ul>
+  <% else %>
+    <button type="button" name="button" v-on:click="signin">MetaMask Login</button>
+  <% end %>
+</div>
