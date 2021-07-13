@@ -26,7 +26,7 @@ class Api::UsersController < ApplicationController
     msg = "[MetaMask Demo]\none-time nonce: #{@user.nonce}"
     bin_msg = msg.unpack1('B*')
     msg_buf_hex = '0x%02x' % bin_msg.to_i(2)
-    address = babel.recoverPersonalSignature({
+    address = sigutil.recover_personal_signature({
       data: msg_buf_hex,
       sig: params[:signature]
     })

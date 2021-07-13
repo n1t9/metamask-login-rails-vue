@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
     @current_user = User.find_by(jwt)
   end
 
-  def babel
-    @babel ||= BabelSchmoozer.new(__dir__)
+  def sigutil
+    @sigutil ||= SigUtilSchmoozer.new(__dir__)
   end
 end
