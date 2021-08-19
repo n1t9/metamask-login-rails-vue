@@ -1,24 +1,14 @@
-# README
+# MetaMask Login
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+One-click login with MetaMask like social media login.
 
-Things you may want to cover:
+Blog: https://nito95.github.io/posts/2020-03-21/
 
-* Ruby version
+![Demo](https://daimoku-pro-staging.s3.ap-northeast-1.amazonaws.com/uploads/tmp/1611880836-315936928465457-0005-6146/2020-03-21-1.gif)
 
-* System dependencies
+## Getting Started
+```
+docker-compose up -d
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Access to `localhost:3000`
