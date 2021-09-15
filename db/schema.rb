@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2021_07_09_032722) do
   create_table "users", force: :cascade do |t|
     t.string "public_address", null: false
     t.bigint "nonce", null: false
-    t.index ["nonce"], name: "index_users_on_nonce", unique: true
+    t.index ["public_address"], name: "index_users_on_public_address", unique: true
   end
 
 end

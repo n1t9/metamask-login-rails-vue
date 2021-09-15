@@ -5,6 +5,6 @@ class Users < ActiveRecord::Migration[6.1]
       t.bigint :nonce, null: false
     end
 
-    add_index :users, :nonce, unique: true
+    add_index :users, :public_address, unique: true
   end
 end
